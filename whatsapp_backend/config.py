@@ -1,0 +1,21 @@
+import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(PROJECT_ROOT / ".env")
+
+META_ACCESS_TOKEN = os.getenv("META_ACCESS_TOKEN", "")
+PHONE_NUMBER_ID = os.getenv("PHONE_NUMBER_ID", "")
+WABA_ID = os.getenv("WABA_ID", "")
+VERIFY_TOKEN = os.getenv("VERIFY_TOKEN", "")
+PORT = int(os.getenv("PORT", "8000"))
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
+FAISS_INDEX_PATH = Path(
+    os.getenv("FAISS_INDEX_PATH", str(PROJECT_ROOT / "data" / "faiss_index"))
+)
+CATALOGUE_CSV_PATH = Path(
+    os.getenv("CATALOGUE_CSV_PATH", str(PROJECT_ROOT / "catalogue.csv"))
+)

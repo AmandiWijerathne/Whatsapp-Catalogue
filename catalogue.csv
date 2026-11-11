@@ -1,0 +1,6 @@
+product_id,product_name,category,brand,price_lkr,stock,description,specifications
+R001,Basic WiFi Router,Router,SampleBrand,4500,10,Basic home WiFi router,2.4 GHz
+R002,Dual Band Router,Router,SampleBrand,8500,6,Dual-band wireless router,2.4 GHz and 5 GHz
+R003,Fibre Router,Router,SampleBrand,12000,4,Sample router for fibre internet,Gigabit Ethernet
+D001,Network Switch,Networking,SampleBrand,6500,5,Network switch for wired devices,8 ports
+D002,WiFi Range Extender,Networking,SampleBrand,5500,8,Device to extend wireless coverage,Dual-band support
